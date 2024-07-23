@@ -158,7 +158,7 @@ class ConvNet_cifar(nn.Module):
         self.dp1 = torch.nn.Dropout(0.5)
         self.conv2 = nn.Conv2d(6, 16, 5, 1)
         self.dp2 = torch.nn.Dropout(0.5)
-        self.fc1 = nn.Linear(4 * 4 * 16, 120)
+        self.fc1 = nn.Linear(5 * 5 * 16, 120)
         self.dp3 = torch.nn.Dropout(0.5)
         self.fc2 = nn.Linear(120, 84)
         self.dp4 = torch.nn.Dropout(0.5)
