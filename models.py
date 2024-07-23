@@ -153,7 +153,7 @@ def ResNet18(input_dim):
 
 class ConvNet_cifar(nn.Module):
     def __init__(self, output_dim):
-        super(ConvNet, self).__init__()
+        super(ConvNet_cifar, self).__init__()
         self.conv1 = nn.Conv2d(3, 6, 5, 1)
         self.dp1 = torch.nn.Dropout(0.5)
         self.conv2 = nn.Conv2d(6, 16, 5, 1)
